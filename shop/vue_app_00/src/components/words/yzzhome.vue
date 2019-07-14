@@ -5,7 +5,14 @@
       </div>
       <!-- 轮播图 -->
       <div class="Sowing">
-
+          <div id="left1">
+          <ul id="play-lun">
+            <li><img src="../../assets/01.png" alt=""></li>
+            <li><img src="../../assets/02.png" alt=""></li>
+            <li><img src="../../assets/03.png" alt=""></li>
+            <li><img src="../../assets/04.png" alt=""></li>
+          </ul>
+        </div>
       </div>
        <!-- 搜索框 -->
         <div class="search1">
@@ -14,15 +21,27 @@
       </div>
       <!-- 搜索内容 -->
       <div class="search_d">
-        <div></div>
-        <div></div>
+        <div>
+       <p>为你搜索到以下单词</p>
+         <div>
+             <p>how are you</p>
+         </div>
+          <div>
+              <p>你好吗？</p>
+          </div>
+        </div>
+        <div><img src="../../assets/01.png" alt=""></div>
       </div>
     </div>
 </template>
+
 <script>
     export default {
         data(){
             return {}
+        },
+        methods:{
+     
         }
     }
 </script>
@@ -63,7 +82,51 @@
         width: 99%;
         height: 170px;
     }
-    
+    .search_d>div:nth-child(1){
+        border: 1px solid red;
+        width: 49%;
+        height:170px;
+        float: left;
+    }
+    .search_d>div:nth-child(1)>div>p{
+        width: 100%;
+        height: 100%;
+       text-align: center;
+       line-height: 60px;
+       color: blue;
+    }
+     .search_d>div:nth-child(1)>p:nth-child(1){
+         color:rgb(109, 18, 112);
+         width: 85%;
+         margin: 0 auto;
+     }
+    .search_d>div:nth-child(1)>div:nth-child(2){
+        border: 1px solid blue;
+        width: 90%;
+        height: 60px;
+        margin: 0 auto;
+        margin-top: 10px;
+        border-radius: 11px;
+    }
+    .search_d>div:nth-child(1)>div:nth-child(3){
+        border: 1px solid blue;
+        width: 90%;
+        height: 60px;
+        margin: 0 auto;
+        margin-top: 10px;
+        border-radius: 11px;
+    }
+    /* 搜索内容右侧div */
+    .search_d>div:nth-child(2){
+        border: 1px solid red;
+        width: 49%;
+        height:170px;
+        float: right;
+    }
+    .search_d>div:nth-child(2)>img{
+width: 100%;
+height: 100;
+    }
     /* 每日好句推荐 */
     .Recommend{
        width: 99%;
@@ -82,6 +145,26 @@
         border: 1px solid red;
         margin: 0 auto;
         margin-top: 10px;
+         overflow: hidden;
     }
-   
+   #left1{
+    width: 99%;
+    height: 100%;
+    overflow: hidden;
+    position: fixed;
+    float: left;
+}
+#play-lun{
+    width: 1920PX;
+    height: 100%;
+}
+#play-lun>li{
+    float: left;
+    list-style: none;
+}
+#play-lun>li>img{
+width: 356px;
+height: 158px;
+border: 1px solid hotpink;
+}
 </style>
