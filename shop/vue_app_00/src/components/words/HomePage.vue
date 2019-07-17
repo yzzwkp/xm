@@ -47,7 +47,7 @@ export default {
     return {
       sliders:[
         {
-          img:require('../../assets/1.jpg')
+          img:require('../../assets/1.jpg'),
         },
         {
          img:require('../../assets/2.jpg')
@@ -156,7 +156,6 @@ export default {
         height:200px;
         margin:0 auto;
         overflow:hidden;
-        border:1px solid red;
       }
       .container{
         display:flex;
